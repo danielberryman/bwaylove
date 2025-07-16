@@ -25,15 +25,6 @@
 </head>
 
 <body>
-    <!-- Modal Overlay -->
-    <div id="modalOverlay" class="modal-overlay hidden">
-        <div class="modal-content">
-            <h2>Modal Title</h2>
-            <p>This is a simple modal overlay.</p>
-            <button id="closeModal">Close</button>
-        </div>
-    </div>
-
     <header class="position-relative d-flex align-items-center justify-content-between h-rem-6">
         <a href="index.html" class="h-100">
             <img class="h-100" src="assets/bwaylove-white.png" alt="My Logo" />
@@ -47,16 +38,17 @@
                 <li class="d-flex justify-content-center align-items-center my-1 mx-0">
                     <a href="shows.html" role="button" class="btn btn-dark-transparent py-3 px-4 border-0 rounded-0 w-100">Shows</a>
                 </li>
-                <li class="d-flex justify-content-center align-items-center my-1 mx-0">
+                <!-- <li class="d-flex justify-content-center align-items-center my-1 mx-0">
                     <a href="calendar.html" role="button" class="btn btn-dark-transparent py-3 px-4 border-0 rounded-0 w-100">Calendar</a>
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-1 mx-0">
                     <a href="who-we-are.html" role="button" class="btn btn-dark-transparent py-3 px-4 border-0 rounded-0 w-100">Who We Are</a>
-                </li>
+                </li> -->
                 <li class="d-flex justify-content-center align-items-center my-1 mx-0">
-                    <button id="openModal" type="button" class="btn btn-light py-3 px-4 border-0 rounded-0 w-100">
+                    <a href="mailto:connect@bwaylove.com"
+                        class="btn btn-light py-3 px-4 border-0 rounded-0 w-100">
                         Connect
-                    </button>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -72,21 +64,6 @@
     <footer>
         &copy; 2025 Bway Love. All rights reserved.
     </footer>
-
-    <script>
-        const modal = document.getElementById('modalOverlay');
-        const modalContent = document.querySelector('.modal-content');
-
-        document.getElementById('openModal').onclick = () => modal.classList.remove('hidden');
-        document.getElementById('closeModal').onclick = () => modal.classList.add('hidden');
-
-        // Close modal if clicking on the overlay (not the modal box)
-        modal.onclick = (e) => {
-            if (!modalContent.contains(e.target)) {
-                modal.classList.add('hidden');
-            }
-        };
-    </script>
 </body>
 
 </html>
