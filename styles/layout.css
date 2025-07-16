@@ -1,3 +1,7 @@
+.h-rem-5 {
+    height: 5rem;
+}
+
 .h-rem-6 {
     height: 6rem;
 }
@@ -24,7 +28,7 @@
 
 .btn-dark-transparent {
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-dark-transparent:hover {
