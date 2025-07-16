@@ -1,0 +1,17 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    padding: 1rem;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
